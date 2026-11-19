@@ -1,0 +1,7 @@
+path: .  # Ruta base
+train: train/images  # Carpeta de entrenamiento
+val: val/images      # Carpeta de validación
+
+# Definición de tus clases (puedes empezar detectando una sola clase: 'lentes')
+nc: 1  
+names: ['lentes']

@@ -1,0 +1,92 @@
+{
+  "camera_url": "rtsp://admin:963852741%@192.168.1.64:554/Streaming/Channels/102",
+  "plc_ip": "192.168.1.100",
+  "plc_port": "502",
+  "esp32_mode": "usb",
+  "esp32_port": "AUTO",
+  "esp32_baud": 115200,
+  "esp32_wifi_ip": "",
+  "esp32_active_low": true,
+  "cell_name": "Celda Activa: Torno CNC 01",
+  "zone_mode": "geocerca_poly",
+  "invert_side": false,
+  "line_x": 0.8397,
+  "line_y": 0.5044,
+  "rect_x1": 0.51,
+  "rect_y1": 0.573,
+  "rect_x2": 0.95,
+  "rect_y2": 0.95,
+  "geofences": [
+    {
+      "name": "Zona 1",
+      "action": "alarma",
+      "inverted": false,
+      "points": [
+        [
+          0.2571,
+          0.4483
+        ],
+        [
+          0.4086,
+          0.4374
+        ],
+        [
+          0.4024,
+          0.9856
+        ],
+        [
+          0.2411,
+          0.99
+        ]
+      ]
+    }
+  ],
+  "saved_cameras": [
+    {
+      "id": "cam_3060d6fc",
+      "name": "Cámara Ethernet IPC-B121H-C (192.168.1.64)",
+      "type": "rtsp",
+      "host": "192.168.1.64",
+      "port": "554",
+      "username": "admin",
+      "password": "963852741%",
+      "stream_path": "/Streaming/Channels/102",
+      "url": "rtsp://admin:963852741%@192.168.1.64:554/Streaming/Channels/102"
+    },
+    {
+      "id": "cam_4da07279",
+      "name": "IP Webcam Celular (10.44.167.63:8080)",
+      "type": "http",
+      "host": "10.44.167.63",
+      "port": "8080",
+      "username": "",
+      "password": "",
+      "stream_path": "/video",
+      "url": "http://10.44.167.63:8080/video"
+    },
+    {
+      "id": "cam_d1fc8d27",
+      "name": "IP Webcam Celular (10.159.216.56:8080)",
+      "type": "http",
+      "host": "10.159.216.56",
+      "port": "8080",
+      "username": "",
+      "password": "",
+      "stream_path": "/video",
+      "url": "http://10.159.216.56:8080/video"
+    }
+  ],
+  "quad_cameras": [
+    "rtsp://admin:963852741%@192.168.1.64:554/Streaming/Channels/102",
+    "http://10.44.167.63:8080/video",
+    "-- Desactivada --",
+    "-- Desactivada --"
+  ],
+  "auto_connect_open_cams": true,
+  "detect_point": "centro",
+  "max_width": 640,
+  "yolo_imgsz": 320,
+  "confidence": 61.0,
+  "require_epp": false,
+  "sound_alarm": true
+}
